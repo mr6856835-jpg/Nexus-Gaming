@@ -1,0 +1,29 @@
+{
+  "name": "nexus-gaming",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Nexus Gaming — a community hub for games, tournaments, and leaderboards.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "smoke": "vite build --ssr scripts/ssr-smoke.tsx --outDir node_modules/.smoke --logLevel warn && node node_modules/.smoke/ssr-smoke.js"
+  },
+  "dependencies": {
+    "lucide-react": "^1.49.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}
